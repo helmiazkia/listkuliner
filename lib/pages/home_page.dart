@@ -13,11 +13,11 @@ class HomePage extends StatelessWidget {
         backgroundColor: pageBgColor,
         appBar: AppBar(
           backgroundColor: headerBackColor,
-          title: Text("Kuliner Nusantara", style: textHeader1),
+          title: const Text("Kuliner Nusantara", style: textHeader1),
           centerTitle: true,
         ),
         body: ListView(padding: EdgeInsets.all(10), children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(Icons.list_alt_sharp, size: 20),
