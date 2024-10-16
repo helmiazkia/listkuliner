@@ -30,8 +30,29 @@ class HomePage extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Container(
+            padding: EdgeInsets.all(10),
             height: 100,
             decoration: BoxDecoration(color: Colors.white),
+            child: Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width: 100,
+                  decoration: BoxDecoration(color: Colors.black54),
+                ),
+                Expanded(
+                  child: Text(
+                    "Nama Menu Kuliner",
+                    style: textHeader2,
+                  ),
+                ),
+                Icon(
+                  Icons.house_rounded,
+                  size: 40,
+                  color: iconColor,
+                ),
+              ],
+            ),
           )
         ]),
       ),
