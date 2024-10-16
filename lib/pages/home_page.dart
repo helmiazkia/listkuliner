@@ -17,9 +17,16 @@ class HomePage extends StatelessWidget {
           centerTitle: true,
         ),
         body: ListView(padding: EdgeInsets.all(10), children: [
-          Text(
-            "List Kuliner",
-            style: textHeader2,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.list_alt_sharp, size: 20),
+              SizedBox(width: 10),
+              Text(
+                "List KULINER",
+                style: textHeader2,
+              ),
+            ],
           ),
           SizedBox(height: 20),
           Container(
