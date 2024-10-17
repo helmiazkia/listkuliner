@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:listkuliner/pages/home_page.dart';
+import 'package:listkuliner/home_page.dart';
+import 'package:listkuliner/styles.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,7 +11,19 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomePage();
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: pageBgColor,
+        appBar: AppBar(
+          backgroundColor: headerBackColor,
+          title: const Text(
+            "Kuliner Nusantara",
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+        ),
+        body: const HomePage(),
+      ),
+    );
   }
 }
-
