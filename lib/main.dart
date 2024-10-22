@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
           backgroundColor: headerBackColor,
           title: const Text(
             "Kuliner Nusantara",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: TextStyle(color: Colors.white, 24, fontWeight: FontWeight.bold ),
           ),
           centerTitle: true,
         ),
