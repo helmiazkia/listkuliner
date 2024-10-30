@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 const textHeader1 = TextStyle(fontSize: 25, fontWeight: FontWeight.bold);
 const textHeader2 = TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
